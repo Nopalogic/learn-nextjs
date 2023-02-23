@@ -1,0 +1,43 @@
+.button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 0 16px;
+	width: 200px;
+	height: 72px;
+	color: #2cb67d;
+	background: transparent;
+	border-radius: 8px;
+	border: 1px solid #2cb67d;
+	cursor: pointer;
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+
+.menuOpen {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	visibility: visible;
+	border-radius: 8px;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.45);
+  transition: ease-in 100ms;
+}
+
+.close {
+	visibility: hidden;
+}
+
+.menuButton {
+	border: 0;
+	width: 100%;
+	height: 56px;
+	border-radius: 0;
+	background-color: transparent;
+	color: #2cb67d;
+}
+
+.menuButton:hover {
+	background: rgba(0, 0, 0, 0.26);
+}

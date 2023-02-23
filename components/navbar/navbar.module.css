@@ -1,0 +1,40 @@
+.nav {
+	width: min(100% - 64px);
+	position: fixed;
+	top: 0;
+	/* z-index: 10; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--charlie);
+	color: var(--alfa);
+	padding: 16px 32px;
+	/* margin: 8px 0; */
+	/* border-radius: 16px; */
+	font-size: 16px;
+}
+
+.brand {
+	font-weight: bold;
+}
+
+.links {
+	display: flex;
+	justify-content: space-around;
+	gap: 24px;
+}
+
+.startedButton {
+	padding: 6px 12px;
+	border: 1px solid var(--alfa);
+	border-radius: 6px;
+	background-color: transparent;
+	color: var(--alfa);
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.startedButton:hover {
+	background-color: var(--alfa);
+	color: var(--charlie);
+}
