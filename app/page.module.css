@@ -36,17 +36,23 @@
 		to bottom, 
 		transparent 0%, 
 		transparent 65%, 
-		#7f5af0 65%, 
-		#7f5af0 100%
+		#2cb67d 65%, 
+		#2cb67d 100%
 		);
+}
+
+.subtitle{
+	margin: 50px 0;
+	font-size: 14px;
 }
 
 .bold{
 	font-weight: bold;
+	text-decoration: underline;
 }
 
 .button {
-	width: 250px;
+	width: 225px;
 	height: 40px;
 	display: flex;
 	justify-content: space-around;
@@ -57,5 +63,6 @@
 	outline: none;
 	border-radius: 20px;
 	font-size: 12px;
+	font-weight: 600;
 	text-transform: uppercase;
 }
