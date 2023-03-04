@@ -5,15 +5,13 @@ export default function Navbar() {
 	return (
 			<nav className={style.nav}>
 				<div className={style.brand}>
-					<Link href={'/'}>SOONFLY</Link>
+					<Link href={'/'}>BRAND</Link>
 				</div>
 				<div className={style.links}>
 					<Link href={'/'}>About</Link>
+					<Link href={'/'}>Portfolio</Link>
 					<Link href={'/'}>Services</Link>
-					<Link href={'/'}>Blog</Link>
-					<Link href={'/'}>Solutions</Link>
 				</div>
-				<button className={style.startedButton}>Get Started</button>
 			</nav>
 	);
 }
