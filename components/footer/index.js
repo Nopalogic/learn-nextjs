@@ -1,54 +1,80 @@
 import style from './footer.module.css';
+import Link from 'next/link';
+
+// referensi / sources
+// https://codepen.io/scanfcode/pen/MEZPNd
 
 export default function Footer() {
 	return (
 		<footer className={style.footer}>
-			<div className={style.content}>
-				<div className={style.leftBox}>
-					<div className="upper">
-						<div className={style.topic}>About us</div>
-						<p>CodingLab is a channel where you can learn HTML, CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+			<div className={style.container}>
+				<div className={style.row}>
+					<div className={style.left}>
+						<h6 className={style.heading}>About</h6>
+						<p className="text-justify">
+							Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the
+							code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and
+							Algorithm.
+						</p>
 					</div>
-					<div className={style.lower}>
-						<div className={style.topic}>Contact us</div>
-						<div className="phone">
-							<a href="#">
-								<i className="fas fa-phone-volume"></i>+007 9089 6767
-							</a>
+
+					<div className={style.middle}>
+						<h6 className={style.heading}>Categories</h6>
+						<div className={style.links}>
+							<Link href="http://scanfcode.com/category/front-end-development/">UI Design</Link>
+							<Link href="http://scanfcode.com/category/back-end-development/">PHP</Link>
+							<Link href="http://scanfcode.com/category/java-programming-language/">Java</Link>
+							<Link href="http://scanfcode.com/category/android/">Android</Link>
+							<Link href="http://scanfcode.com/category/templates/">Templates</Link>
 						</div>
-						<div className="email">
-							<a href="#">
-								<i className="fas fa-envelope"></i>abc@gmail.com
-							</a>
+					</div>
+
+					<div className={style.right}>
+						<h6 className={style.heading}>Quick Links</h6>
+						<div className={style.links}>
+							<Link href="http://scanfcode.com/about/">About Us</Link>
+							<Link href="http://scanfcode.com/contact/">Contact Us</Link>
+							<Link href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</Link>
+							<Link href="http://scanfcode.com/privacy-policy/">Privacy Policy</Link>
+							<Link href="http://scanfcode.com/sitemap/">Sitemap</Link>
 						</div>
 					</div>
 				</div>
-				<div className="middle box">
-					<div className={style.topic}>Our Services</div>
-					<div>
-						<a href="#">Web Design, Development</a>
-					</div>
-					<div>
-						<a href="#">Web UX Design, Reasearch</a>
-					</div>
-					<div>
-						<a href="#">Web User Interface Design</a>
-					</div>
-					<div>
-						<a href="#">Theme Development, Design</a>
-					</div>
-					<div>
-						<a href="#">Mobile Application Design</a>
-					</div>
-					<div>
-						<a href="#">Wire raming & Prototyping</a>
-					</div>
-				</div>
+				<hr className={style.line} />
 			</div>
-			<div className="bottom">
-				<p>
-					Copyright © 2020 <a href="#">CodingLab</a> All rights reserved
-				</p>
+			<div className={style.container}>
+				<div className={style.bottom}>
+					<div className={style.colLeft}>
+						<p className="copyright-text">
+							Copyright &copy; 2017 All Rights Reserved by <a href="#">Scanfcode</a>.
+						</p>
+					</div>
+
+					<div className={style.colRight}>
+						<ul className={style.socialMedia}>
+							<li>
+								<a className="facebook" href="#">
+									<i className="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a className="twitter" href="#">
+									<i className="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a className="dribbble" href="#">
+									<i className="fa fa-dribbble"></i>
+								</a>
+							</li>
+							<li>
+								<a className="linkedin" href="#">
+									<i className="fa fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</footer>
 	);
