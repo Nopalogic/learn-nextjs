@@ -25,20 +25,15 @@
 	flex-direction: column;
 }
 
-.bottom {
-	display: flex;
-	justify-content: space-between;
-}
-
-
-
-.colRight{
-	width: 33%;
+.text {
+	margin: 0;
+	padding: 0;
 }
 
 .socialMedia {
 	display: flex;
 	justify-content: space-between;
+	gap: 16px;
 }
 
 .line {

@@ -11,7 +11,7 @@ export default function Footer() {
 				<div className={style.row}>
 					<div className={style.left}>
 						<h6 className={style.heading}>About</h6>
-						<p className="text-justify">
+						<p className={style.text}>
 							Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the
 							code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and
 							Algorithm.
@@ -40,40 +40,28 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-				<hr className={style.line} />
-			</div>
-			<div className={style.container}>
-				<div className={style.bottom}>
-					<div className={style.colLeft}>
-						<p className="copyright-text">
-							Copyright &copy; 2017 All Rights Reserved by <a href="#">Scanfcode</a>.
-						</p>
-					</div>
 
-					<div className={style.colRight}>
-						<ul className={style.socialMedia}>
-							<li>
-								<a className="facebook" href="#">
-									<i className="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a className="twitter" href="#">
-									<i className="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a className="dribbble" href="#">
-									<i className="fa fa-dribbble"></i>
-								</a>
-							</li>
-							<li>
-								<a className="linkedin" href="#">
-									<i className="fa fa-linkedin"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
+				<hr className={style.line} />
+
+				<div className={style.row}>
+					<p className={style.text}>
+						Copyright &copy; 2017 All Rights Reserved by <a href="#">Scanfcode</a>.
+					</p>
+
+					{/* <div className={style.socialMedia}>
+						<a className="facebook" href="#">
+							<i className="fa fa-facebook">lorem</i>
+						</a>
+						<a className="twitter" href="#">
+							<i className="fa fa-twitter">lorem</i>
+						</a>
+						<a className="dribbble" href="#">
+							<i className="fa fa-dribbble">lorem</i>
+						</a>
+						<a className="linkedin" href="#">
+							<i className="fa fa-linkedin">lorem</i>
+						</a>
+					</div> */}
 				</div>
 			</div>
 		</footer>
