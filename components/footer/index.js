@@ -1,5 +1,7 @@
 import style from './footer.module.css';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGamepad } from '@fortawesome/free-solid-svg-icons';
 
 // referensi / sources
 // https://codepen.io/scanfcode/pen/MEZPNd
@@ -43,26 +45,9 @@ export default function Footer() {
 
 				<hr className={style.line} />
 
-				<div className={style.row}>
-					<p className={style.text}>
-						Copyright &copy; 2017 All Rights Reserved by <a href="#">Scanfcode</a>.
-					</p>
-
-					{/* <div className={style.socialMedia}>
-						<a className="facebook" href="#">
-							<i className="fa fa-facebook">lorem</i>
-						</a>
-						<a className="twitter" href="#">
-							<i className="fa fa-twitter">lorem</i>
-						</a>
-						<a className="dribbble" href="#">
-							<i className="fa fa-dribbble">lorem</i>
-						</a>
-						<a className="linkedin" href="#">
-							<i className="fa fa-linkedin">lorem</i>
-						</a>
-					</div> */}
-				</div>
+				<p className={style.text}>
+					Copyright &copy; 2017 All Rights Reserved by <a href="#">Scanfcode</a>.
+				</p>
 			</div>
 		</footer>
 	);

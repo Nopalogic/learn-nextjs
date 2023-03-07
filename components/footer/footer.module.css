@@ -38,15 +38,8 @@
 	padding: 0;
 }
 
-.socialMedia {
-	display: flex;
-	justify-content: space-between;
-	gap: 16px;
-}
-
 .line {
 	border-top-color: #bbb;
 	opacity: 0.5;
 	margin: 15px 0;
 }
-
