@@ -1,5 +1,5 @@
 .footer {
-	background-color: #26272b;
+	background-color: var(--charlie);
 	padding: 45px 0 20px;
 	font-size: 15px;
 	line-height: 24px;
@@ -7,7 +7,7 @@
 }
 
 .container {
-	width: 1140px;
+	width:  min(100% - 56px);
 	margin-inline: auto;
 }
 
