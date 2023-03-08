@@ -1,14 +1,13 @@
 import Link from 'next/link';
-import style from './navbar.module.css';
 
 export default function Navbar() {
 	return (
-		<nav className={style.nav}>
-			<div className={style.container}>
-				<div className={style.brand}>
+		<nav className='w-full fixed z-[10] px-6 py-4 bg-neutral-900'>
+			<div className='flex justify-between'>
+				<div className="font-bold text-neutral-100">
 					<Link href={'/'}>BRAND</Link>
 				</div>
-				<div className={style.links}>
+				<div className='flex justify-around gap-6 text-neutral-100'>
 					<Link href={'/'}>Home</Link>
 					<Link href={'/about'}>About</Link>
 					<Link href={'/'}>Portfolio</Link>

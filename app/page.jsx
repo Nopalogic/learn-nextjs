@@ -3,24 +3,26 @@ import style from './page.module.css';
 export default function Home() {
 	return (
 		<div>
-			<section className={style.hero}>
+			<section className="h-screen flex flex-col justify-center items-center z-[-2] bg-neutral-800 text-neutral-100">
 				<h1>Welcome To My Website</h1>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, consequuntur?</p>
 			</section>
 
 			{/* About */}
-			<section className={style.about}>
+			<section className='px-6 bg-neutral-800 text-neutral-100'>
 				<div className={style.row}>
 					<div className={style.column}></div>
 					<div className={style.column}>
 						<h3>Naufal Adhi Ramadhan</h3>
-						<p>Web developer and <span>Student</span></p>
+						<p>
+							Web developer and <span>Student</span>
+						</p>
 					</div>
 				</div>
 			</section>
 
 			{/* Portfolio */}
-			<section className={style.portfolio}>
+			<section className='px-6 bg-neutral-800 text-neutral-100'>
 				<div className={style.row}>
 					<div className={style.column}>
 						<div className={style.heading}>
