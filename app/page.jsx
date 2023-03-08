@@ -2,19 +2,27 @@ import style from './page.module.css';
 
 export default function Home() {
 	return (
-		<div className={style.container}>
+		<div>
 			<section className={style.hero}>
 				<h1>Welcome To My Website</h1>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, consequuntur?</p>
 			</section>
 
 			{/* About */}
-			<section></section>
+			<section className={style.about}>
+				<div className={style.row}>
+					<div className={style.column}></div>
+					<div className={style.column}>
+						<h3>Naufal Adhi Ramadhan</h3>
+						<p>Web developer and <span>Student</span></p>
+					</div>
+				</div>
+			</section>
 
 			{/* Portfolio */}
 			<section className={style.portfolio}>
 				<div className={style.row}>
-					<div className={style.column} id={style.left}>
+					<div className={style.column}>
 						<div className={style.heading}>
 							<h3>Heading</h3>
 							<p>

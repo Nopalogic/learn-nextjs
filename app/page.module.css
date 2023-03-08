@@ -1,7 +1,10 @@
-/* .container {
-	width: min(100% - 32px, 1280px);
-	margin-inline: auto;
-} */
+.row {
+	display: flex;
+}
+
+.column {
+	width: 50%;
+}
 
 .hero {
 	height: 100vh;
@@ -16,14 +19,6 @@
 .portfolio {
 	padding: 0 32px;
 	color: #ddd;
-}
-
-.row {
-	display: flex;
-}
-
-.column {
-	width: 50%;
 }
 
 .heading {

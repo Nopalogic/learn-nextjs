@@ -1,4 +1,8 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
 	--alfa: #f2f3eb;
 	--beta: #e2b6cd;
 	--charlie: #16161a;
@@ -19,4 +23,4 @@ body {
 a {
 	text-decoration: none;
 	color: inherit;
-}
+} */
