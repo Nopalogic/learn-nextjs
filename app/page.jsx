@@ -1,17 +1,27 @@
-
 export default function Home() {
+	const projects = [
+		{ link: '#', name: 'Project1' },
+		{ link: '#', name: 'Project2' },
+		{ link: '#', name: 'Project3' },
+		{ link: '#', name: 'Project4' },
+		{ link: '#', name: 'Project5' },
+	];
+
 	return (
 		<div>
 			<section className="h-screen flex flex-col justify-center items-center z-[-2] bg-neutral-800 text-neutral-100">
-				<h1>Welcome To My Website</h1>
+				<h1 className="text-6xl pb-5 font-medium">Welcome To My Website</h1>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, consequuntur?</p>
 			</section>
 
 			{/* About */}
-			<section className='px-6 bg-neutral-800 text-neutral-100'>
-				<div className='flex'>
-					<div className='w-1/2'></div>
-					<div className='w-1/2'>
+			<section className="p-6 bg-neutral-800 text-neutral-100">
+				<div className="pb-5 text-center">
+					<h3>about</h3>
+				</div>
+				<div className="flex">
+					<div className="w-1/2"></div>
+					<div className="w-1/2">
 						<h3>Naufal Adhi Ramadhan</h3>
 						<p>
 							Web developer and <span>Student</span>
@@ -21,33 +31,23 @@ export default function Home() {
 			</section>
 
 			{/* Portfolio */}
-			<section className='px-6 bg-neutral-800 text-neutral-100'>
-				<div className='flex'>
-					<div className='w-1/2'>
-						<div className='sticky top-[70px]'>
-							<h3>Heading</h3>
+			<section className="h-screen p-6 bg-neutral-800 text-neutral-100">
+				<div className="flex">
+					<div className="w-1/2">
+						<div className="">
+							<h3>Portfolio</h3>
 							<p>
 								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus placeat rem praesentium? Aspernatur recusandae temporibus quia harum ducimus ratione tempore explicabo veniam
 								consequatur?
 							</p>
 						</div>
 					</div>
-					<div className='w-1/2'>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugiat sunt odio illo. Magni quasi sunt, distinctio quam deserunt incidunt impedit! Dolore cum laudantium minus culpa
-							placeat esse sit quo cumque molestiae, rem voluptate nam consectetur necessitatibus molestias laboriosam eligendi laborum excepturi. Iste praesentium porro ipsam tempora consectetur,
-							accusamus maxime?
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugiat sunt odio illo. Magni quasi sunt, distinctio quam deserunt incidunt impedit! Dolore cum laudantium minus culpa
-							placeat esse sit quo cumque molestiae, rem voluptate nam consectetur necessitatibus molestias laboriosam eligendi laborum excepturi. Iste praesentium porro ipsam tempora consectetur,
-							accusamus maxime?
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugiat sunt odio illo. Magni quasi sunt, distinctio quam deserunt incidunt impedit! Dolore cum laudantium minus culpa
-							placeat esse sit quo cumque molestiae, rem voluptate nam consectetur necessitatibus molestias laboriosam eligendi laborum excepturi. Iste praesentium porro ipsam tempora consectetur,
-							accusamus maxime?
-						</p>
+					<div className="w-1/2 overflow-y-auto h-[90vh]">
+						{projects.map((project, i) => (
+							<div key={i} className="w-[300px] h-[225px] bg-neutral-700 rounded-xl my-4">
+								{project.name}
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
