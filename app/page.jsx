@@ -1,4 +1,3 @@
-import style from './page.module.css';
 
 export default function Home() {
 	return (
@@ -10,9 +9,9 @@ export default function Home() {
 
 			{/* About */}
 			<section className='px-6 bg-neutral-800 text-neutral-100'>
-				<div className={style.row}>
-					<div className={style.column}></div>
-					<div className={style.column}>
+				<div className='flex'>
+					<div className='w-1/2'></div>
+					<div className='w-1/2'>
 						<h3>Naufal Adhi Ramadhan</h3>
 						<p>
 							Web developer and <span>Student</span>
@@ -23,9 +22,9 @@ export default function Home() {
 
 			{/* Portfolio */}
 			<section className='px-6 bg-neutral-800 text-neutral-100'>
-				<div className={style.row}>
-					<div className={style.column}>
-						<div className={style.heading}>
+				<div className='flex'>
+					<div className='w-1/2'>
+						<div className='sticky top-[70px]'>
 							<h3>Heading</h3>
 							<p>
 								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus placeat rem praesentium? Aspernatur recusandae temporibus quia harum ducimus ratione tempore explicabo veniam
@@ -33,7 +32,7 @@ export default function Home() {
 							</p>
 						</div>
 					</div>
-					<div className={style.column} id={style.right}>
+					<div className='w-1/2'>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugiat sunt odio illo. Magni quasi sunt, distinctio quam deserunt incidunt impedit! Dolore cum laudantium minus culpa
 							placeat esse sit quo cumque molestiae, rem voluptate nam consectetur necessitatibus molestias laboriosam eligendi laborum excepturi. Iste praesentium porro ipsam tempora consectetur,
