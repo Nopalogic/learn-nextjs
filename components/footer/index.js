@@ -7,7 +7,7 @@ export default function Footer() {
 	return (
 		<footer className='pt-11 pb-5 px-6 bg-neutral-900 text-neutral-500'>
 			<div className=''>
-				<div className="flex justify-between">
+				<div className="flex">
 					<div className='w-1/2'>
 						<h6 className='my-1 text-base uppercase font-semibold text-neutral-100'>About</h6>
 						<p className=''>
@@ -17,7 +17,7 @@ export default function Footer() {
 						</p>
 					</div>
 
-					<div className=''>
+					<div className='w-1/4'>
 						<h6 className='my-1 text-base uppercase font-semibold text-neutral-100'>Categories</h6>
 						<div className='flex flex-col'>
 							<Link href="http://scanfcode.com/category/front-end-development/">UI Design</Link>
@@ -28,7 +28,7 @@ export default function Footer() {
 						</div>
 					</div>
 
-					<div className=''>
+					<div className='w-1/4'>
 						<h6 className='my-1 text-base uppercase font-semibold text-neutral-100'>Quick Links</h6>
 						<div className='flex flex-col'>
 							<Link href="http://scanfcode.com/about/">About Us</Link>
@@ -40,7 +40,7 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<hr className='my-[15px]' />
+				<hr className='my-[15px] opacity-50' />
 
 				<p className=''>
 					Copyright &copy; 2017 All Rights Reserved by <a href="#">Scanfcode</a>.
