@@ -34,13 +34,11 @@ export default function Home() {
 			<section className="h-screen p-6 bg-neutral-800 text-neutral-100">
 				<div className="flex">
 					<div className="w-1/2">
-						<div className="">
-							<h3>Portfolio</h3>
-							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus placeat rem praesentium? Aspernatur recusandae temporibus quia harum ducimus ratione tempore explicabo veniam
-								consequatur?
-							</p>
-						</div>
+						<h3>Portfolio</h3>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus placeat rem praesentium? Aspernatur recusandae temporibus quia harum ducimus ratione tempore explicabo veniam
+							consequatur?
+						</p>
 					</div>
 					<div className="w-1/2 overflow-y-auto h-[90vh]">
 						{projects.map((project, i) => (
