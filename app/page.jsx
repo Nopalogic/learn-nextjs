@@ -34,8 +34,8 @@ export default function Home() {
 			<section className="h-screen p-6 bg-neutral-800 text-neutral-100">
 				<div className="flex">
 					<div className="w-1/2">
-						<h3>Portfolio</h3>
-						<p>
+						<h3 className="text-5xl font-semibold">Portfolio</h3>
+						<p className="text-base">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus placeat rem praesentium? Aspernatur recusandae temporibus quia harum ducimus ratione tempore explicabo veniam
 							consequatur?
 						</p>
@@ -43,7 +43,8 @@ export default function Home() {
 					<div className="w-1/2 overflow-y-auto h-[90vh]">
 						{projects.map((project, i) => (
 							<div key={i} className="w-[300px] h-[225px] bg-neutral-700 rounded-xl my-4">
-								{project.name}
+								<div className="h-3/4"></div>
+								<div>{project.name}</div>
 							</div>
 						))}
 					</div>
