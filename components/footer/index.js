@@ -7,8 +7,8 @@ export default function Footer() {
 	return (
 		<footer className='pt-11 pb-5 px-6 bg-neutral-900 text-neutral-500'>
 			<div className=''>
-				<div className="flex">
-					<div className='w-1/2'>
+				<div className="block lg:flex">
+					<div className='w-full pb-3 lg:w-1/2'>
 						<h6 className='my-1 text-base uppercase font-semibold text-neutral-100'>About</h6>
 						<p className=''>
 							Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the
@@ -17,7 +17,7 @@ export default function Footer() {
 						</p>
 					</div>
 
-					<div className='w-1/4'>
+					<div className='w-full pb-3 lg:w-1/4'>
 						<h6 className='my-1 text-base uppercase font-semibold text-neutral-100'>Categories</h6>
 						<div className='flex flex-col'>
 							<Link href="http://scanfcode.com/category/front-end-development/">UI Design</Link>
@@ -28,7 +28,7 @@ export default function Footer() {
 						</div>
 					</div>
 
-					<div className='w-1/4'>
+					<div className='w-full pb-3 lg:w-1/4'>
 						<h6 className='my-1 text-base uppercase font-semibold text-neutral-100'>Quick Links</h6>
 						<div className='flex flex-col'>
 							<Link href="http://scanfcode.com/about/">About Us</Link>
