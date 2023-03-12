@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.hamburger-line {
+	@apply my-2 block h-[2px] w-[30px] bg-neutral-100;
+}
+
+.active > span:nth-child(1) {
+	@apply rotate-45;
+}
+
+.active > span:nth-child(2) {
+	@apply scale-0;
+}
+
+.active > span:nth-child(3) {
+	@apply -rotate-45;
+}
+
 /* :root {
 	--alfa: #f2f3eb;
 	--beta: #e2b6cd;
